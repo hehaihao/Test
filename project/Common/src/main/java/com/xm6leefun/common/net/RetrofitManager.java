@@ -24,6 +24,7 @@ public class RetrofitManager {
     private static RetrofitManager apiRetrofit;
     private Retrofit mRetrofit;
     private Retrofit mZwdRetrofit;
+    
 
     /**
      * 获取retrofit
