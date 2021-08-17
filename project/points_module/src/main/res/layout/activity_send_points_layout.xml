@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wallet_oc_transfer_lin_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_new_base_white_top_bar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@mipmap/bg_points_balance"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_point_total_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="35dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/transfer_account_balance_title_str"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp" />
+
+
+                <TextView
+                    android:id="@+id/total_points_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_point_total_title"
+                    android:layout_marginStart="35dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="36sp"
+                    android:textStyle="bold"
+                    tools:text="789" />
+
+
+                <TextView
+                    android:id="@+id/select_points_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/total_points_tv"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:drawableEnd="@mipmap/white_arrow"
+                    tools:text="ABC Token"
+                    android:textColor="@color/white"
+                    android:onClick="selectType"
+                    tools:textSize="16sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:paddingStart="13dp"
+                android:paddingEnd="13dp"
+                android:background="@drawable/white_conner_shadow_bg">
+
+                <EditText
+                    android:id="@+id/to_address_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@id/select_address_iv"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:focusable="true"
+                    android:hint="@string/transfer_address_hint_str"
+                    android:imeOptions="actionNext"
+                    android:textAllCaps="false"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/select_address_iv"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:onClick="selectAddress"
+                    android:src="@mipmap/points_address_icon" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/points_et"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/white_conner_shadow_bg"
+                android:digits="0123456789"
+                android:hint="@string/transfer_counts_hint_str"
+                android:imeOptions="actionNext"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+
+
+            <EditText
+                android:id="@+id/desc_et"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/white_conner_shadow_bg"
+                android:hint="@string/transfer_desc_input_str"
+                android:imeOptions="actionNext"
+                android:maxLength="50"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textSize="14sp" />
+
+
+            <Button
+                android:id="@+id/tv_done"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/blue25_stroke_bg"
+                android:gravity="center"
+                android:onClick="transfer"
+                android:text="@string/done"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

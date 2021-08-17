@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/layout_base_white_top_bar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@mipmap/transfer_ing_icon"/>
+
+            <TextView
+                android:id="@+id/status_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                tools:text="转账中"/>
+            <TextView
+                android:id="@+id/time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp"
+                android:textColor="@color/black_40a"
+                tools:text="2019/01/01 05:00:00"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"
+                    android:textColor="@color/black_70a"
+                    android:text="@string/transaction_points_count"/>
+
+                <TextView
+                    android:id="@+id/amount_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"
+                    android:textColor="@color/color3256E1"
+                    tools:text="-1200"/>
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/recei_address_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/recei_address_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textSize="16sp"
+                    android:textColor="@color/black_70a"
+                    android:text="@string/transaction_receive_address"/>
+                <TextView
+                    android:id="@+id/receive_address_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp30"
+                    android:layout_below="@id/recei_address_title"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/black_40a"
+                    android:lineSpacingExtra="5dp"
+                    tools:text="0x6D64676F20260e0bhjhjh34344"/>
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@id/receive_address_tv"
+                    android:src="@mipmap/address_copy_icon"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pay_address_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pay_address_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textSize="16sp"
+                    android:textColor="@color/black_70a"
+                    android:text="@string/transaction_send_address"/>
+                <TextView
+                    android:id="@+id/pay_address_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp30"
+                    android:layout_below="@id/pay_address_title"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/black_40a"
+                    android:lineSpacingExtra="5dp"
+                    tools:text="0x6D64676F20260e0bhjhjh34344"/>
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@id/pay_address_tv"
+                    android:src="@mipmap/address_copy_icon"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/trans_code_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/trans_code_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textSize="16sp"
+                    android:textColor="@color/black_70a"
+                    android:text="@string/transaction_trade_nunber"/>
+                <TextView
+                    android:id="@+id/trans_code_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp30"
+                    android:layout_below="@id/trans_code_title"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/black_40a"
+                    android:lineSpacingExtra="5dp"
+                    tools:text="0x6D64676F20260e0bhjhjh34344"/>
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBottom="@id/trans_code_tv"
+                    android:src="@mipmap/address_copy_icon"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/query_detail_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textSize="16sp"
+                    android:textColor="@color/black_70a"
+                    android:drawableEnd="@mipmap/to_right_icon_black"
+                    android:text="@string/query_select_detail"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

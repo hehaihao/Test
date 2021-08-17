@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <string-array name="transaction_tabs">
+        <item>全部</item>
+        <item>转出</item>
+        <item>转入</item>
+        <item>失败</item>
+    </string-array>
+    <string-array name="status_arr">
+        <item>全部</item>
+        <item>审核中</item>
+        <item>已成功</item>
+        <item>失败</item>
+    </string-array>
+</resources>

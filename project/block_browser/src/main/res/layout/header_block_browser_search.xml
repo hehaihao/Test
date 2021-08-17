@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:paddingStart="13dp"
+        android:paddingEnd="15dp"
+        android:background="@drawable/shape_rectange_ff365cfe">
+
+        <EditText
+            android:id="@+id/select_contract_address_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="#999999"
+            android:textSize="14sp"
+            android:background="@null"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:hint="@string/hint_input_address_hash_block"/>
+
+        <ImageView
+            android:id="@+id/search_iv"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/search_icon"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

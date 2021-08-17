@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xm6leefun.setting_module">
+
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <application>
+
+        <activity android:name=".address.list.AddressListActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".address.edit.AddressEditActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".syssetting.SystemSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".nodesetting.NodeSettingActivity"
+            android:screenOrientation="portrait" />
+    </application>
+</manifest>

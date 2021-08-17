@@ -1,0 +1,37 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/shape_rectange_ff365cfe"
+    android:layout_height="48dp"
+    android:layout_width="match_parent"
+    android:layout_margin="15dp">
+
+    <EditText
+        android:id="@+id/select_contract_address_tv"
+        android:background="@null"
+        android:ellipsize="end"
+        android:paddingBottom="14dp"
+        android:paddingEnd="15dp"
+        android:paddingStart="13dp"
+        android:paddingTop="14dp"
+        android:hint="@string/hint_input_token_or_address"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_toStartOf="@id/search_iv"
+        android:maxLines="1"
+        android:textColor="#999999"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/search_iv"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:padding="12dp"
+        android:layout_height="48dp"
+        android:layout_width="48dp"
+        android:src="@mipmap/search_icon" />
+
+</RelativeLayout>
+

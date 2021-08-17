@@ -1,0 +1,11 @@
+include ':block_browser'
+include ':setting_module'
+include ':scan_module'
+include ':home_module'
+include ':export_module'
+include ':physical_module'
+include ':points_module'
+include ':wallet_module'
+include ':Common'
+include ':app'
+rootProject.name = "PocketToken"

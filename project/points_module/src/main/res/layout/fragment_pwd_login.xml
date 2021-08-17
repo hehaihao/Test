@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--  密码登录-->
+    <LinearLayout
+        android:id="@+id/lin_pwd_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/btn_shape_rectangle_greyf1"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            >
+            <EditText
+                android:id="@+id/ed_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:padding="@dimen/dp15"
+                android:ems="11"
+                android:maxLines="1"
+                android:maxLength="15"
+                android:textSize="@dimen/sp16"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="@string/phone_is_null" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dp25"
+            android:background="@drawable/btn_shape_rectangle_greyf1"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+                <EditText
+                    android:id="@+id/ed_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:padding="@dimen/dp15"
+                    android:hint="@string/psw_is_null"
+                    android:maxLength="20"
+                    android:textSize="@dimen/sp16" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

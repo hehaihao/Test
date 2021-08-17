@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@drawable/white_conner_shadow_bg"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp">
+
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="3dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp8"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="物品名称：古董一号"
+            android:textColor="#ff000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_token"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            tools:text="Token ID：18"
+            android:textColor="#ff000000"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_ruler_hash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            tools:text="合约地址：0x07ab4d...6fb06357"
+            android:maxWidth="140dp"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:textColor="#ff000000"
+            android:textSize="11sp" />
+    </LinearLayout>
+</LinearLayout>
+
+

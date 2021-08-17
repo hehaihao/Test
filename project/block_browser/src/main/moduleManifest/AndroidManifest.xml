@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xm6leefun.block_browser">
+
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".BrowserApplication"
+        android:allowBackup="true"
+        android:label="Block_Browser"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <activity
+            android:name=".home.BlockBrowserHomeActivity"
+            android:screenOrientation="portrait">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+
+        <activity
+            android:name=".block.BlockBrowserBlockListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".trade.BlockBrowserTradeListActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".trade_detail.BlockBrowserTradeDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".block_detail.BlockBrowserBlockDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".product_detail.ProductDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".address_detail.BlockBrowserAddressDetailActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".address_detail.score.BlockBrowserScoreListActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".address_detail.property.BlockBrowserPropertyListActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

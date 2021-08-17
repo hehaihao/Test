@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/layout_new_base_white_top_bar" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_below="@id/root_view"
+        android:id="@+id/ultra_pull"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    android:background="@drawable/white_conner_shadow_bg">
+                    <com.bigkoo.convenientbanner.ConvenientBanner
+                        android:id="@+id/img_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="164dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/owner_address_str"
+                            android:textSize="16sp"
+                            android:textColor="@color/black_80a"/>
+
+                        <TextView
+                            android:id="@+id/ownner_address_tv"
+                            android:layout_width="200dp"
+                            android:gravity="end"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:maxEms="10"
+                            android:ellipsize="middle"
+                            android:layout_alignParentEnd="true"
+                            tools:text="oc877475874851457485"
+                            android:textSize="16sp"
+                            android:textColor="@color/black_60a"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/contract_address_str"
+                            android:textSize="16sp"
+                            android:textColor="@color/black_80a"/>
+
+                        <TextView
+                            android:id="@+id/contract_address_tv"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:singleLine="true"
+                            android:maxEms="10"
+                            android:ellipsize="middle"
+                            android:layout_alignParentEnd="true"
+                            tools:text="oc877475874851457485"
+                            android:textSize="16sp"
+                            android:textColor="@color/black_60a"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/token_id_str"
+                            android:textSize="16sp"
+                            android:textColor="@color/black_80a"/>
+
+                        <TextView
+                            android:id="@+id/token_id_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            tools:text="100"
+                            android:maxEms="10"
+                            android:ellipsize="middle"
+                            android:singleLine="true"
+                            android:textSize="16sp"
+                            android:textColor="@color/black_60a"/>
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:text="@string/physical_intro_str"
+                        android:textSize="16sp"
+                        android:textColor="@color/black_80a"/>
+
+                    <TextView
+                        android:id="@+id/physical_intro_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        tools:text="古董为唐代三彩，宽：20CM，高：30CM。"
+                        android:textSize="11sp"
+                        android:textColor="@color/black_50a"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/physical_desc_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:padding="20dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/white_conner_shadow_bg">
+
+                    <TextView
+                        android:id="@+id/desc_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/physical_features_str"
+                        android:textSize="16sp"
+                        android:textColor="@color/black_80a"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/physical_desc_recycler"
+                        android:layout_below="@id/desc_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="@string/auth_certificate_str"
+                        android:textSize="16sp"
+                        android:visibility="gone"
+                        android:textColor="@color/color_365cfe"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/trans_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="20dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/white_conner_shadow_bg">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="交易记录"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/physical_event_str"
+                            android:gravity="start"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/physical_source_address_str"
+                            android:gravity="start"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/physical_to_address_str"
+                            android:gravity="start"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/physical_date_str"
+                            android:gravity="center"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/trans_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <include layout="@layout/layout_nodata"/>
+
+</RelativeLayout>

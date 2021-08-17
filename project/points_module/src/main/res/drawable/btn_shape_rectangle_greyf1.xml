@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 圆角 -->
+    <corners
+        android:radius="@dimen/dp8"
+        android:topLeftRadius="@dimen/dp8"
+        android:topRightRadius="@dimen/dp8"
+        android:bottomLeftRadius="@dimen/dp8"
+        android:bottomRightRadius="@dimen/dp8"/><!-- 设置圆角半径 -->
+    <!-- 间隔 -->
+    <padding
+        android:left="@dimen/dp1"
+        android:top="@dimen/dp1"
+        android:right="@dimen/dp1"
+        android:bottom="@dimen/dp1"/><!-- 各方向的间隔 -->
+
+    <!-- 大小 -->
+    <size
+        android:width="@dimen/dp60"
+        android:height="@dimen/dp20"/><!-- 宽度和高度 -->
+
+    <solid
+        android:color="@color/greyf1"/>
+</shape>

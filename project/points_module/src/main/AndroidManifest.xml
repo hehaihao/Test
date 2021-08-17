@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xm6leefun.points_module">
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 相机权限 -->
+
+    <application>
+        <activity android:name=".send_points.SendPointsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".receive_code.ReceiptQrCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".transaction.TransactionActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".points_intro.PointsIntroActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".transaction_detail.TransactionDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".points_exchange_record.PointsExchangeRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".zwd_login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".points_type.PointsTypeActivity"
+            android:screenOrientation="portrait" />
+    </application>
+</manifest>

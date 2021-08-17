@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <FrameLayout
+        android:id="@+id/rim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 绘制阴影部分 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/scan_area"
+            android:background="#60000000"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/scan_area"
+            android:background="#60000000"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@id/scan_area"
+            android:layout_alignTop="@id/scan_area"
+            android:layout_alignBottom="@id/scan_area"
+            android:background="#60000000"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/scan_area"
+            android:layout_alignTop="@id/scan_area"
+            android:layout_alignBottom="@id/scan_area"
+            android:background="#60000000"/>
+
+
+        <ImageView
+            android:id="@+id/scan_area"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/scan_api_scanner_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_rectangle_a1_50a"
+            android:textColor="#f3f3f6"
+            android:layout_centerHorizontal="true"
+            android:text="@string/scan_api_tips"
+            android:lineSpacingMultiplier="1.2"
+            android:layout_margin="40dp"
+            android:padding="5dp"
+            android:layout_below="@id/scan_area"/>
+
+        <ImageView
+            android:id="@+id/iv_line"
+            android:layout_width="145dp"
+            android:layout_height="5dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/scan_api_scanner_line"
+            android:scaleType="fitXY"
+            />
+
+        <ImageView
+            android:id="@+id/iv_scan_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="100dp"
+            android:padding="10dp"
+            android:src="@mipmap/scan_close"
+            android:onClick="close"/>
+
+        <include layout="@layout/layout_base_white_top_bar"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

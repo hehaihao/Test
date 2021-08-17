@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <declare-styleable name="SVCircleProgressBar">
+    <attr name="svprogress_roundColor" format="color"/>
+    <attr name="svprogress_roundProgressColor" format="color"/>
+    <attr name="svprogress_roundWidth" format="dimension"></attr>
+    <attr name="svprogress_max" format="integer"></attr>
+    <attr name="svprogress_style">
+      <enum name="STROKE" value="0"></enum>
+      <enum name="FILL" value="1"></enum>
+    </attr>
+  </declare-styleable>
+
+  <declare-styleable name="ViewfinderView">
+    <attr name="corner_color" format="color" />
+    <attr name="laser_color" format="color" />
+    <attr name="frame_color" format="color" />
+    <attr name="mask_color" format="color" />
+    <attr name="result_point_color" format="color" />
+    <attr name="result_color" format="color" />
+    <attr name="label_text_color" format="color" />
+    <attr name="label_text" format="string" />
+    <attr name="label_text_size" format="float" />
+    <attr name="bottom_text_color" format="color" />
+    <attr name="bottom_text" format="string" />
+    <attr name="bottom_text_size" format="float" />
+  </declare-styleable>
+
+</resources>

@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">PocketToken</string>
+    <string name="physical_curr_address_title">当前地址</string>
+    <string name="physical_all_contract_address">全部合约地址</string>
+    <string name="physical_assets_title">我的资产</string>
+    <string name="physical_assets_home_title">实物资产</string>
+    <string name="physical_assets_tran">物权转移</string>
+    <string name="physical_points_balance">可用积分余额：</string>
+    <string name="physical_input_psw_hint">请输入钱包支付密码</string>
+    <string name="physical_pay_psw">支付密码</string>
+    <string name="physical_input_address_hint">请输入正确的转移地址</string>
+    <string name="physical_gas_title">旷工费用</string>
+    <string name="physical_address_tips">请确保转移地址正确，否则物权上链不可篡改</string>
+    <string name="physical_tan_address">转移地址</string>
+    <string name="physical_tran_confir">物权转移确认</string>
+    <string name="physical_tran_psw_err">密码错误</string>
+    <string name="owner_address_str">所有人地址：</string>
+    <string name="contract_address_str">合约地址：</string>
+    <string name="token_id_str">Token ID：</string>
+    <string name="token_id_data_str">Token ID：%s</string>
+    <string name="physical_name_data_str">物品名称：%s</string>
+    <string name="physical_intro_str">物品介绍</string>
+    <string name="auth_certificate_str">鉴定证书</string>
+    <string name="physical_features_str">物品特征</string>
+    <string name="physical_event_str">事件</string>
+    <string name="physical_source_address_str">源地址</string>
+    <string name="physical_to_address_str">目标地址</string>
+    <string name="physical_date_str">日期</string>
+    <string name="physical_tran_record_title">转移记录</string>
+
+    <string name="physical_tran_in_type_str">转入</string>
+    <string name="physical_tran_out_type_str">转出</string>
+    <string name="physical_tran_type_str">转移类型：%s</string>
+    <string name="physical_tran_from_str">发送者地址：%s</string>
+    <string name="physical_tran_to_str">接收者地址：%s</string>
+
+    <string name="hint_input_name_tokenid_str">请输入物品名称/Token ID</string>
+
+    <string name="transfer_address_hint_str">获取人地址</string>
+    <string name="transfer_counts_hint_str">积分转账数量</string>
+
+    <string name="receipt_property_title">接收资产</string>
+    <string name="send_property_title">发送资产</string>
+    <string name="receipt_physical_qrcode_hint">扫二维码，转入%s</string>
+    <string name="receive_physical_code_title_str">资产收款码</string>
+    <string name="wrong_psw_tip">请输入有效的地址</string>
+    <string name="same_address_tip">发送地址不能与接收地址相同</string>
+    <string name="please_input_points_tip">请输入积分数量</string>
+    <string name="please_input_psw_tip">请输入支付密码</string>
+</resources>

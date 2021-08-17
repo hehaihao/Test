@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xm6leefun.physical_module">
+
+    <application
+        android:name=".PhysicalApplication"
+        android:allowBackup="true"
+        android:label="Physical"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <activity android:name=".physical_detail.PhysicalDetailActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".certificate.CertificateActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".photo_viewer.PhotosActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".physical_list.PhysicalListActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".record.RecordListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".send_property.SendPropertyActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".receive_property.ReceivePropertyActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

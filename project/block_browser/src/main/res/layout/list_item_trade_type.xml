@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_types"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingStart="10dp"
+    android:paddingBottom="4dp"
+    android:layout_marginStart="5dp"
+    android:paddingEnd="10dp"
+    android:paddingTop="4dp"
+    android:textSize="12sp"
+    tools:text="积分兑换"
+    android:background="@drawable/selector_trade_type"/>
+
+

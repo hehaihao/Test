@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/layout_new_base_white_top_bar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/dp8"
+                    android:text="*"
+                    android:textSize="@dimen/sp12"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/dp8"
+                    android:text="@string/create_wallet_tips_str"
+                    android:textSize="@dimen/sp12"
+                    android:textColor="@color/black_60a" />
+
+            </RelativeLayout>
+
+            <!--  钱包名称-->
+            <EditText
+                android:id="@+id/create_ed_name"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/dp20"
+                android:hint="@string/create_wallet_name_input"
+                android:background="@drawable/white_conner_shadow_bg"
+                android:paddingStart="15dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:maxLength="20" />
+
+            <!--  钱包密码-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/white_conner_shadow_bg"
+                android:paddingStart="15dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/create_ed_pwd"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="@string/create_wallet_pwd_input"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:minEms="8"
+                    android:maxLength="20"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:inputType="textPassword"
+                    />
+                <ImageView
+                    android:id="@+id/create_iv_show_or_hide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/eye_close_icon"
+                    />
+            </LinearLayout>
+
+            <!--  重新输入密码-->
+            <EditText
+                android:id="@+id/create_ed_pwd_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/white_conner_shadow_bg"
+                android:paddingStart="15dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/create_wallet_pwd_confirm_input"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:minEms="8"
+                android:maxLength="20"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:inputType="textPassword" />
+
+            <!--  提示信息-->
+
+            <EditText
+                android:id="@+id/create_ed_pwd_hint"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/white_conner_shadow_bg"
+                android:paddingStart="15dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/create_wallet_pwd_hint_input"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:imeOptions="actionGo"
+                android:singleLine="true"
+                android:maxLength="50" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/create_wallet_checkbox"
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="@dimen/dp20"
+                    android:layout_gravity="center"
+                    android:button="@mipmap/express_ico_area_nor"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/create_wallet_tv_read_yet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:text="@string/text_bind3"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp12" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/create_wallet_tv_read_tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10dp"
+                android:layout_marginBottom="@dimen/dp60"
+                android:lineSpacingMultiplier="1.5"
+                android:text="@string/attention_str"
+                android:textColor="@color/black_60a"
+                android:textSize="@dimen/sp12" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/id_wallet_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp8"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/dp8"
+            android:text="*"
+            android:textSize="@dimen/sp12"
+            android:textColor="@color/red" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/dp8"
+            android:text="@string/create_id_wallet_tips_str"
+            android:textSize="@dimen/sp12"
+            android:textColor="@color/black_60a" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/create_only_tv_create"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/blue25_stroke_bg"
+        android:layout_margin="@dimen/dp10"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="@string/create_wallet_create"
+        android:gravity="center"
+        />
+</LinearLayout>

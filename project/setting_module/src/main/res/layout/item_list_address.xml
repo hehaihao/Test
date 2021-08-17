@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="@drawable/white_conner_shadow_bg">
+
+
+            <TextView
+                android:id="@+id/desc_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue2_stroke_bg"
+                android:layout_marginEnd="5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="10sp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                tools:text="描述"
+                android:visibility="gone"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_toEndOf="@id/desc_tv"
+                android:layout_alignBottom="@id/desc_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:text="名称"/>
+
+        <TextView
+            android:id="@+id/address_tv"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_tv"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="11sp"
+            tools:text="0x88555"
+            android:textColor="@color/black_40a"/>
+
+    <ImageView
+        android:id="@+id/icon_2"
+        android:layout_width="44dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="10dp"
+        android:paddingStart="10dp"
+        android:layout_centerVertical="true"
+        app:srcCompat="@mipmap/address_copy_icon"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>

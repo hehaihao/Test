@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp"
+    android:background="@drawable/white_10dp_conner">
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_222222"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/dialog_wallet_input_psw_str" />
+
+
+    <LinearLayout
+        android:id="@+id/content_lin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/white_conner_shadow_bg"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/title_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <EditText
+            android:id="@+id/content_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            tools:hint="@string/dialog_wallet_input_psw_str"
+            android:maxLines="1"
+            android:textColor="@color/color_222222"
+            android:textSize="13sp"
+            android:inputType="textPassword"/>
+
+        <ImageView
+            android:id="@+id/remove_tips_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@mipmap/eye_close_icon"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/white_10dp_top_conner"
+        app:layout_constraintTop_toBottomOf="@id/content_lin">
+
+        <TextView
+            android:id="@+id/cancel_tv"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="14dp"
+            android:textColor="@color/black_40a"
+            android:textSize="14sp"
+            android:text="@string/cancel"
+            android:gravity="center"
+            android:background="@drawable/grey25_stroke_white_bg"/>
+        <TextView
+            android:id="@+id/sure_tv"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="14dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:text="@string/sure"
+            android:gravity="center"
+            android:background="@drawable/blue25_stroke_bg"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

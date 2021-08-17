@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <include layout="@layout/layout_new_base_white_top_bar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/import_wallet_tv_sub_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/import_wallet_title_words"
+                android:textColor="@color/black_60a"
+                android:textSize="@dimen/sp_12"
+                android:layout_marginBottom="10dp"
+                />
+
+
+            <EditText
+                android:id="@+id/import_wallet_ed_mnemonic"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp120"
+                android:background="@drawable/white_conner_shadow_bg"
+                android:layout_marginBottom="20dp"
+                android:gravity="top"
+                android:textCursorDrawable="@null"
+                android:focusable="true"
+                android:padding="15dp"
+                android:imeOptions="actionNext"
+                android:textAllCaps="false"
+                android:textColor="@color/color_058cd9"
+                android:hint="@string/import_wallet_hint_words"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/import_wallet_lin_path_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/import_wallet_path"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/import_wallet_path_hint"
+                    android:textColor="@color/black_60a"
+                    android:textSize="12sp"
+                    />
+                <LinearLayout
+                    android:id="@+id/import_wallet_lin_path"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/white_conner_shadow_bg"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="10dp"
+                    android:paddingTop="5dp"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/import_wallet_tv_path"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"
+                            tools:text="m/44'/65535'/0'/0/0"
+                            android:textSize="16sp"
+                            android:layout_marginRight="10dp"
+                            android:singleLine="true" />
+                        <TextView
+                            android:id="@+id/import_wallet_tv_path_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/grey5_stroke_bg"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp"
+                            android:layout_gravity="center"
+                            android:text="@string/import_wallet_default_path"
+                            android:gravity="center"
+                            android:textCursorDrawable="@null"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:singleLine="true" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--  钱包名称-->
+            <EditText
+                android:id="@+id/import_wallet_ed_name"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/white_conner_shadow_bg"
+                android:paddingStart="15dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:hint="@string/import_wallet_name_input"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:maxLength="20"
+                />
+
+            <!--  钱包密码-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/white_conner_shadow_bg"
+                android:paddingStart="15dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/import_wallet_ed_pwd"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="@string/import_wallet_pwd_set"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:minEms="8"
+                    android:maxLength="20"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:inputType="textPassword"
+                    />
+                <ImageView
+                    android:id="@+id/import_wallet_iv_show_or_hide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/eye_close_icon"
+                    />
+            </LinearLayout>
+
+            <!--  重新输入密码-->
+            <EditText
+                android:id="@+id/import_wallet_ed_pwd_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/white_conner_shadow_bg"
+                android:paddingStart="15dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/import_wallet_pwd_confirm_input"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:minEms="8"
+                android:maxLength="20"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                />
+
+            <!--  提示信息-->
+
+            <EditText
+                android:id="@+id/import_wallet_ed_pwd_hint"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/white_conner_shadow_bg"
+                android:paddingStart="15dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:hint="@string/import_wallet_pwd_hint_input"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:maxLength="50" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <TextView
+        android:id="@+id/import_wallet_tv_import"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/blue25_stroke_bg"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="@string/import_wallet_import"
+        android:gravity="center"
+        />
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xm6leefun.wallet_module">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name=".WalletApplication"
+        android:allowBackup="true"
+        android:label="Wallet"
+        android:theme="@style/AppTheme"
+        android:networkSecurityConfig="@xml/network">
+        <activity android:name=".first.FirstEntryActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".create_wallet.CreateWalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".backup_tips.BackupTipsActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".words_make.WordsMakeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".words_confirm.WordsConfirmActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".importby.words.ImportByWordsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".importby.prikey.ImportByPrikeyActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".importby.keystore.ImportByKeystoreActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".wallet_manage.WalletManageActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".wallet_setting.WalletSettingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".backup.prikey.BackupPrivateKeyActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".backup.keystore.BackupKeystoreActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".reset_psw.ResetPswActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".points_property.my_property.MyPropertyActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".points_property.add_property.AddPropertyActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".points_property.property_manager.PropertyManagerActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".remove.RemoveWalletActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

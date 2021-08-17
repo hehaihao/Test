@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"/>
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/white_top20_shadow_bg"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:layout_alignParentBottom="true">
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:id="@+id/wallet"
+            android:textSize="10sp"
+            android:text="@string/index_wallet"
+            android:background="@color/transparent"
+            android:drawableTop="@drawable/home_wallet_selector"
+            android:textColor="@drawable/home_text_switch_bg"/>
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:id="@+id/points_exchange"
+            android:textSize="10sp"
+            android:text="@string/index_exchange"
+            android:background="@color/transparent"
+            android:drawableTop="@drawable/home_exchange_selector"
+            android:textColor="@drawable/home_text_switch_bg"/>
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:id="@+id/me"
+            android:textSize="10sp"
+            android:text="@string/index_me"
+            android:background="@color/transparent"
+            android:drawableTop="@drawable/home_me_selector"
+            android:textColor="@drawable/home_text_switch_bg"/>
+    </RadioGroup>
+
+</RelativeLayout>

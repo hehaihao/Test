@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp"
+    android:background="@drawable/white_conner_shadow_bg">
+
+    <TextView
+        android:id="@+id/contract_address_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="middle"
+        tools:text="合约地址：8797654598554"
+        android:textSize="13sp"
+        android:textColor="@color/black_80a"/>
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:singleLine="true"
+        android:ellipsize="end"
+        tools:text="物品名称：古董一号"
+        android:textSize="13sp"
+        android:textColor="@color/black_80a"/>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp125"
+        android:layout_marginTop="@dimen/dp10"/>
+
+</LinearLayout>

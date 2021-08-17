@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 设置选择和未选中时显示的mipmap -->
+    <item android:state_checked="false" android:drawable="@mipmap/wallet_unselect_icon"/>
+
+    <item android:state_checked="true" android:drawable="@mipmap/wallet_selected_icon"/>
+
+</selector>

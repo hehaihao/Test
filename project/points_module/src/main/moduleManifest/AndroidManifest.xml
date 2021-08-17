@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xm6leefun.points_module">
+
+    <application
+        android:name=".PointsApplication"
+        android:allowBackup="true"
+        android:label="Points"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".send_points.SendPointsActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".receive_code.ReceiptQrCodeActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".transaction.TransactionActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".points_intro.PointsIntroActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".transaction_detail.TransactionDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".zwd_login.LoginActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".points_type.PointsTypeActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

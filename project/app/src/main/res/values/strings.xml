@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name_release">PocketToken</string>
+    <string name="app_name_debug">PocketToken_debug</string>
+    <string name="splash_content1">物权</string>
+    <string name="splash_content2">转移</string>
+    <string name="splash_content3">基于区块链的物权转移系统</string>
+</resources>

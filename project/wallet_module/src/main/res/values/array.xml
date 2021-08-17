@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <string-array name="only_paths">
+        <item>m/44\'/65535\'/0\'/0/0</item>
+        <item>m/44\'/0\'/0\'/0/0</item>
+    </string-array>
+    <string-array name="keystore_tabs">
+        <item>Keystore</item>
+        <item>二维码</item>
+    </string-array>
+
+    <string-array name="private_key_tabs">
+        <item>私钥</item>
+        <item>二维码</item>
+    </string-array>
+    <string-array name="reset_psw_tabs">
+        <item>助记词</item>
+        <item>私钥</item>
+    </string-array>
+</resources>

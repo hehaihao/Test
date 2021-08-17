@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PocketToken</string>
+
+    <string name="scan_api_title">扫一扫</string>
+    <string name="scan_api_fail">扫码失败</string>
+    <string name="scan_api_camera_not_init">摄像头未初始化，请稍后</string>
+    <string name="scan_api_tips">请将镜头对准二维码进行扫描</string>
+    <string name="qr_code_dialog_tip">无法识别的二维码</string>
+    <string name="show_scan_result_null_result">扫描结果为空</string>
+
+    <string name="scan_address_title">识别到一个钱包地址，你想要存储还是转账</string>
+    <string name="scan_address_save">存储地址</string>
+    <string name="scan_address_transfer">转账</string>
+    <string name="scan_address_cancel">取消</string>
+</resources>

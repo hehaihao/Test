@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_new_base_white_top_bar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:textColor="@color/black222_60a"
+                android:text="@string/app_introduce"
+                android:textSize="@dimen/sp13"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="@dimen/dp25"
+                android:layout_marginTop="@dimen/dp25"
+                android:orientation="vertical"
+                >
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tab_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@color/white"
+                    app:tabIndicatorHeight="2dp"
+                    app:tabIndicatorFullWidth="false"
+                    app:tabBackground="@null"
+                    app:tabRippleColor="@null"
+                    app:tabTextColor="@color/grey333"
+                    app:tabIndicatorColor="@color/blue1e"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp20"
+                    app:tabMode="scrollable"
+                    app:tabSelectedTextColor="@color/blue1e" />
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/vp_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp150"
+                    android:overScrollMode="never"
+                    android:fadingEdge="none"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:background="@color/white"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginRight="@dimen/dp20"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/dp30"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:onClick="login"
+                    android:textSize="@dimen/sp16"
+                    android:background="@drawable/btn_shape_blue1e"
+                    android:text="@string/btn_login" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xm6leefun.physical_module">
+
+    <application>
+        <activity android:name=".physical_detail.PhysicalDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".certificate.CertificateActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".photo_viewer.PhotosActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".physical_list.PhysicalListActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".record.RecordListActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".send_property.SendPropertyActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".receive_property.ReceivePropertyActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

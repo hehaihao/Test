@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include layout="@layout/layout_new_base_top_bar" />
+
+    <include layout="@layout/header_block_browser_search" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="@string/type"
+            android:textColor="#ff000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_types"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/trade_hash"
+            android:textColor="#ff000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="2.5"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/type"
+            android:textColor="#ff000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="1.5" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/create_time"
+            android:textColor="#ff000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_weight="2.5"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <com.xm6leefun.common.widget.EmptyDataRecyclerView
+        android:id="@+id/trade_rec"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_first"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@mipmap/icon_first"/>
+
+        <ImageView
+            android:id="@+id/iv_pre"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="5dp"
+            android:src="@mipmap/icon_pre"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前页"
+            android:textColor="#80000000"
+            android:textSize="16sp"
+            android:layout_marginStart="5dp" />
+
+        <TextView
+            android:id="@+id/tv_current_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="1"
+            android:textColor="#365CFE"
+            android:textSize="16sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总页"
+            android:textColor="#80000000"
+            android:textSize="16sp"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_total_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="200"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp" />
+
+
+        <ImageView
+            android:id="@+id/iv_next"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@mipmap/icon_next"/>
+
+        <ImageView
+            android:id="@+id/iv_last"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="5dp"
+            android:src="@mipmap/icon_last"/>
+
+    </LinearLayout>
+
+</LinearLayout>

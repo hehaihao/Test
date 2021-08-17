@@ -1,0 +1,61 @@
+<resources>
+    <string name="copy_success">已复制</string>
+
+    <string name="ultra_down_list_header_default_text">下拉刷新</string>
+    <string name="ultra_down_list_header_release_text">释放刷新</string>
+    <string name="ultra_down_list_header_refresh_text">正在加载...</string>
+    <string name="ultra_down_list_header_complete_text">刷新完成</string>
+
+    <string name="qrcode_save_successfully">收款二维码已保存到手机相册</string>
+    <string name="done">完成</string>
+    <string name="please_wait">请稍等</string>
+    <string name="cancel">取消</string>
+    <string name="sure">确认</string>
+    <string name="loading_str">加载中...</string>
+
+    <string name="scan_to_open_camera_permission">请到设置处开启摄像头权限</string>
+    <string name="scan_to_open_read_write_permission">请到设置处开启读写权限</string>
+    <string name="select_wallet_str">选择地址</string>
+    <string name="address_selected_str">已连接</string>
+
+    <string name="no_data_str">暂无数据</string>
+
+
+    <string name="hint_input_token_or_address">输入Token名称或合约地址</string>
+    <string name="input_points_str">输入积分数量</string>
+    <string name="please_input_points_str">请输入指定收取的积分数量</string>
+    <string name="receipt_qrcode_set_num_error">验证错误，转账积分不正确</string>
+    <string name="wallet_oc_transfer_enter_max_num">交易最大值为100亿</string>
+    <string name="wallet_oc_transfer_enter_min_num">积分必须大于0</string>
+
+    <string name="receipt_qrcode_save">保存</string>
+    <string name="receipt_qrcode_address">积分接收地址</string>
+    <string name="dialog_wallet_input_psw_str">请输入密码</string>
+    <string name="password_wrong">密码错误</string>
+
+
+    <string name="delete">删除</string>
+    <string name="edit">编辑</string>
+
+    <string name="home_relogin_tips">登录信息过期，请重新登录</string>
+
+
+    <string name="checking_psw_str">正在校验</string>
+
+    <string name="update_downloading_str">正在更新 %d</string>
+
+    <string name="update_install_str">安装</string>
+
+    <string name="updata_version_name">发现新版本 版本号:%s</string>
+
+    <string name="new_updata">已经是最新版本</string>
+
+    <string name="find_new_version">发现新版本</string>
+
+    <string name="update_now">立即更新</string>
+
+    <string name="trade_no_data">当前区块中未产生交易</string>
+
+    <string name="tip">提示</string>
+
+</resources>

@@ -1,0 +1,230 @@
+<resources>
+    <string name="app_name">PocketToken</string>
+    <!--    首次进入钱包界面-->
+    <string name="first_entry_create">创建钱包</string>
+    <string name="first_entry_create_sub_title">首次使用钱包</string>
+    <string name="first_entry_import">导入钱包</string>
+    <string name="first_entry_import_sub_title">已拥有钱包</string>
+
+    <string name="first_entry_add">添加钱包</string>
+    <string name="create_wallet_name_input">钱包名称</string>
+    <string name="create_wallet_pwd_input">设置钱包密码</string>
+    <string name="create_wallet_pwd_hint">提示信息</string>
+    <string name="create_wallet_pwd_hint_input">密码提示信息（选填）</string>
+    <string name="create_wallet_pwd_confirm_input">确认密码</string>
+    <string name="create_wallet_pwd_confirm_mismatch">两次输入的密码不一致</string>
+    <string name="create_wallet_pwd_incompatible">密码为数字、字母组合，长度6–20位</string>
+
+    <string name="text_bind3">我已经了解并同意以下事项</string>
+    <string name="attention_str">1.我已仔细阅读并同意服务及隐私条款；\n2.账号所有权和使用权归用户所有，创建账号后的所有操作与PokeTok钱包无关。</string>
+
+    <string name="create_id_wallet_title_str">创建身份钱包</string>
+    <string name="create_wallet_title_str">创建钱包</string>
+    <string name="create_wallet_tips_str">&#8195;钱包密码将用于隐私保护和交易授权，本应用不会存储密码，也无法帮您找回，请务必牢记，妥善保管密码。</string>
+    <string name="create_id_wallet_tips_str">&#8195;请先创建身份钱包，否则将无法使用其他功能</string>
+    <string name="create_wallet_wallet_name">请输入钱包名称</string>
+    <string name="create_wallet_pwd_is_null">请输入您的密码</string>
+    <string name="create_wallet_pwd_new_pwd_is_null">请输入新密码</string>
+    <string name="create_wallet_pwd_confirm_pwd_is_null">请输入确认密码</string>
+    <string name="create_wallet_pwd_twice_pwd_is_not_same">您所输入的两次密码不一致</string>
+    <string name="create_wallet_pwd_pwd_is_error">密码为数字、字母组合，长度6–20位</string>
+    <string name="create_wallet_agree_first">请先阅读并同意所写事项</string>
+
+    <string name="create_wallet_create">创建钱包</string>
+    <string name="create_wallet_creating">创建中</string>
+    <string name="create_wallet_create_success">创建成功</string>
+
+    <string name="security_title_tips">安全提醒</string>
+    <string name="security_content_tips">为确保私钥及助记词安全前先关闭手机网络或调至飞行模式后，进行创建钱包和导入钱包</string>
+    <string name="not_create_str">暂不创建</string>
+    <string name="closed_network_str">已关闭网络</string>
+
+    <string name="backup_hint_title">备份提示</string>
+    <string name="backup_hint_title_keystore">保管并备份</string>
+    <string name="backup_hint_title_sub_words">获得助记词等于拥有钱包资产所有权</string>
+    <string name="backup_hint_title_sub_keystore">获得Keystore和密码等于拥有钱包资产所有权</string>
+    <string name="backup_hint_title_sub_private_key">获得私钥等于拥有钱包资产所有权</string>
+    <string name="backup_hint_content_words">助记词由英文单词组成，请抄写并妥善保管</string>
+    <string name="backup_hint_content2_words">1.使用纸和笔正确抄写助记词</string>
+    <string name="backup_hint_content3_words">2.如果你的手机丢失、被盗、损坏，助记词将可以恢复你的资产</string>
+    <string name="backup_hint_content_keystore">使用纸笔正确抄写，并保管至安全的地方</string>
+    <string name="backup_hint_content2_keystore">1.使用纸笔正确抄写，并保管至安全的地方</string>
+    <string name="backup_hint_content3_keystore">2.Keystore丢失，无法找回，请务必备份Keystore</string>
+    <string name="backup_hint_content_keystore_title">备份Keystore</string>
+    <string name="backup_hint_content_pk">备份私钥</string>
+    <string name="backup_hint_content2_pk">1.使用纸和笔正确抄写私钥</string>
+    <string name="backup_hint_content3_pk">2.如果你的手机丢失、被盗、损坏，私钥将可以恢复你的资产</string>
+    <string name="backup_hint_content4_pk">离线保管</string>
+    <string name="backup_hint_content5_pk">1.妥善保管至隔离网络的安全地方</string>
+    <string name="backup_hint_content6_pk">2.请勿将私钥在联网环境下分享和存储，比如邮件，相册，社交应用等</string>
+    <string name="backup_hint_content6_words">2.请勿将助记词在联网环境下分享和存储，比如邮件，相册，社交应用等</string>
+    <string name="backup_hint_content6_keystore">2.请勿将Keystore在联网环境下分享和存储，比如邮件，相册，社交应用等</string>
+    <string name="next">下一步</string>
+    <string name="backup_hint_backup_late">稍后备份</string>
+
+    <string name="backup_sure_know">知道了</string>
+    <string name="backup_dont_screenshot">请勿截屏</string>
+    <string name="backup_dont_share_tips">请勿截屏分享和存储，这将可能被第三方恶意软件收集，造成资产损失</string>
+
+    <!--    抄写助记词界面-->
+    <string name="words_make_title">确认助记词</string>
+    <string name="words_make_title_sub">请按顺序抄写助记词，确保备份正确</string>
+    <string name="words_make_content">妥善保管助记词至隔离网络的安全地方</string>
+    <string name="words_make_content2">请勿将助记词在联网环境下分享和存储，比如邮件，相册，社交应用等</string>
+    <string name="words_make_content3">如使用纸笔抄写，请注意抄写规范，避免单词错误</string>
+    <string name="words_make_confirm">已确认备份</string>
+
+    <!--    确认助记词界面-->
+    <string name="words_confirm_title">备份助记词</string>
+    <string name="words_confirm_title_sub">请按顺序抄写助记词，确保备份正确。</string>
+    <string name="words_confirm_mnemonic_is_null">请点击选择助记词</string>
+    <string name="words_confirm_creating">验证中…</string>
+    <string name="words_confirm_mnemonic_is_error">助记词有误，请重新选择</string>
+    <string name="words_confirm_mnemonic_is_lacking">请输入完整的助记词</string>
+    <string name="words_confirm_invalid_address">无效的钱包地址</string>
+    <string name="words_confirm_verify_pass">验证通过！</string>
+    <string name="words_confirm_create_success">创建成功</string>
+
+    <string name="import_wallet_title_words">请根据已备份的助记词英语单词，按正确顺序填写，并使用空格分隔</string>
+    <string name="import_wallet_title_pk">用户可以使用明文私钥来导入钱包</string>
+    <string name="import_wallet_title_keystore">直接复制粘贴以太坊官方钱包keystore文件内容至输入框，或者通过生成keystore内容的二维码，扫描录入</string>
+    <string name="import_wallet_hint_words">请填写助记词</string>
+    <string name="import_wallet_hint_pk">请输入明文私钥</string>
+    <string name="import_wallet_hint_keystore">请输入keystore</string>
+    <string name="import_wallet_path">选择路径</string>
+    <string name="import_wallet_path_hint">仅用于区分助记词生成地址版本，正常情况下选择默认即可</string>
+    <string name="import_wallet_default_path">默认</string>
+    <string name="import_wallet_name_input">钱包名</string>
+    <string name="import_wallet_pwd_set">请设置钱包密码</string>
+    <string name="import_wallet_pwd_confirm_input">请重复输入钱包密码</string>
+    <string name="import_wallet_pwd_hint_input">密码提示信息（选填）</string>
+    <string name="import_wallet_title">导入钱包</string>
+    <string name="import_wallet_import">开始导入</string>
+    <string name="import_wallet_importing">导入中…</string>
+    <string name="import_wallet_pwd_input">请输入钱包密码</string>
+    <string name="import_wallet_pwd_confirm_mismatch">两次输入的密码不一致</string>
+    <string name="import_wallet_pwd_incompatible">密码为数字、字母组合，长度6–20位</string>
+    <string name="mnemonic_confirm_mnemonic_is_lacking">请输入完整的助记词</string>
+    <string name="import_address_exist">不能重复导入相同的地址</string>
+
+    <string name="import_by_keystore">Key Store</string>
+    <string name="import_recommend">推荐</string>
+    <string name="import_by_keystore_desc">加密的私钥Json文件</string>
+    <string name="import_by_words">助记词</string>
+    <string name="import_by_words_desc">助记词由单词组成，以空格隔开</string>
+    <string name="import_by_private_key">私钥</string>
+    <string name="import_by_private_key_desc">明文私钥字符</string>
+    <string name="import_by_private_key_error">输入的私钥不正确</string>
+    <string name="import_by_keystore_psw_error">输入的密码不正确</string>
+    <string name="import_by_invalid_address">无效的钱包地址</string>
+
+    <string name="manager_wallet_title">钱包管理</string>
+    <string name="main_page_title">钱包</string>
+    <string name="main_page_setting">设置</string>
+    <string name="main_page_scan_str">扫一扫</string>
+    <string name="main_page_receive_str">接收积分</string>
+    <string name="main_page_transfer_str">发送积分</string>
+    <string name="home_back_up_tips">安全提示</string>
+    <string name="home_back_up_desc">您的身份助记词未备份，请务必备份助记词</string>
+
+    <string name="wallet_setting_title_str">钱包设置</string>
+    <string name="wallet_setting_name_str">钱包名称</string>
+    <string name="wallet_setting_address_str">钱包地址</string>
+    <string name="wallet_setting_reset_psw_str">重置密码</string>
+    <string name="wallet_setting_no_psw_pay_str">免密支付</string>
+    <string name="wallet_setting_forget_psw">忘记密码？查看密码提示词</string>
+    <string name="wallet_setting_forget_psw_dialog_title">密码提示词</string>
+    <string name="wallet_setting_beckup_str">钱包备份</string>
+    <string name="wallet_setting_beckup_tips_str">以下操作常用于找回钱包，如需备份，请选择以下方式</string>
+    <string name="wallet_setting_export_words_str">导出助记词</string>
+    <string name="wallet_setting_backup_words_str">备份助记词</string>
+    <string name="wallet_setting_export_keystore_str">导出Keystore</string>
+    <string name="wallet_setting_export_private_key_str">导出私钥</string>
+    <string name="wallet_setting_remove_str">移除钱包</string>
+    <string name="password_wrong">密码错误</string>
+    <string name="wallet_setting_empty_desc_str">未填写</string>
+
+    <string name="input_money_str">输入金额</string>
+    <string name="please_input_money_str">输入收款金额</string>
+    <string name="wallet_remove_tips_str">提示：务必确保已将钱包备份，否则删除钱包后将无法找回该钱包，请谨慎进行此项操作</string>
+    <string name="wallet_input_psw_str">请输入密码</string>
+    <string name="wallet_psw_confirm_str">密码确认</string>
+
+    <string name="wallet_remove_title">移除钱包</string>
+    <string name="wallet_remove_hint">你当前身份下存在多个钱包，移除后将默认切换为首个创建的钱包。</string>
+    <string name="wallet_remove_change">切换钱包</string>
+    <string name="wallet_remove_remove">移除钱包</string>
+
+    <string name="backup_keystore_hint">离线保存</string>
+    <string name="backup_keystore_hint1">切勿保存至邮箱、记事本、网盘、聊天工具等，非常危险</string>
+    <string name="backup_keystore_hint2">请勿使用网络传输</string>
+    <string name="backup_keystore_hint3">请勿通过网络工具传输，一旦被黑客获取将造成不可挽回的资产损失。建议使用离线设备通过扫二维码方式传输</string>
+    <string name="backup_keystore_hint4">密码管理工具保存</string>
+    <string name="backup_keystore_hint5">建议使用密码管理工具管理</string>
+    <string name="backup_keystore_copy">复制Keystore</string>
+    <string name="backup_private_key_copy">复制私钥</string>
+    <string name="backup_keystore_hint6">仅供直接扫描</string>
+    <string name="backup_keystore_hint7">二维码禁止保存、截图、以及拍照。仅供用户在安全环境下直接扫描来方便的导入钱包</string>
+    <string name="backup_keystore_hint8">在安全环境下使用</string>
+    <string name="backup_keystore_hint9">请在确保四周无人及无摄像头的情况下使用。二维码一旦被他人获取将造成不可挽回的资产损失</string>
+    <string name="backup_keystore_show">显示二维码</string>
+
+    <string name="wallet_setting_reset_psw_dialog_title">确定重置密码</string>
+    <string name="wallet_setting_reset_psw_dialog_content">如需重置密码，可通过导入助记词或导入私钥的方式重新设置密码，是否确定要重置？</string>
+    <string name="wallet_setting_tips_title">提示</string>
+    <string name="wallet_setting_remove_dialog_content">移除并退出当前钱包后，将退出，如需登入需要重新导入钱包，是否确定要退出？</string>
+    <string name="wallet_setting_remove_dialog_sure">确定退出</string>
+
+    <string name="id_wallet_remove_err">当前身份钱包不可移除</string>
+    <!--    修改密码-->
+    <string name="reset_pwd_title">重置密码</string>
+    <string name="reset_pwd_reset_success">重置成功</string>
+    <string name="reset_pwd_reset_failed">重置失败</string>
+    <string name="reset_pwd_title_words">请根据已备份的助记词英语单词，按正确的顺序填写，并使用空格分隔。</string>
+    <string name="reset_pwd_title_pk">输入Private Key文件内容至输入框，或通过扫描Private Key内容生成的二维码录入，请留意字符大小写。</string>
+    <string name="reset_pwd_hint_words">请输入助记词</string>
+    <string name="reset_pwd_hint_pk">请输入明文私钥</string>
+    <string name="reset_pwd_pwd">钱包密码</string>
+    <string name="reset_pwd_pwd_set">请设置钱包密码</string>
+    <string name="reset_pwd_pwd_confirm">重新确认密码</string>
+    <string name="reset_pwd_pwd_confirm_input">请重新输入密码</string>
+    <string name="reset_pwd_pwd_hint">提示信息</string>
+    <string name="reset_pwd_pwd_hint_input">密码提示信息（选填）</string>
+
+    <string name="import_wallet_mnemonic_err">助记词错误</string>
+    <string name="import_wallet_mnemonic_cannot_empty">助记词不能为空</string>
+    <string name="import_wallet_mnemonic_is_lacking">助记词长度不正确</string>
+    <string name="import_wallet_pk_cannot_empty">私钥不能为空</string>
+
+    <string name="home_wallet_manager_str">管理</string>
+    <string name="home_switch_wallet_title">切换钱包</string>
+    <string name="home_switch_id_wallet_title">身份钱包</string>
+    <string name="home_switch_create_import_wallet_title">创建/导入</string>
+    <string name="home_wallet_points_title">积分资产</string>
+    <string name="home_wallet_physical_title">实物资产</string>
+    <string name="home_wallet_points_sub_title">积分种类</string>
+    <string name="home_wallet_physical_sub_title">实物类别</string>
+    <string name="home_wallet_physical_trans_record">转移记录</string>
+    <string name="home_wallet_receive_physical">接收资产</string>
+    <string name="home_wallet_send_physical">发送资产</string>
+
+    <string name="home_wallet_physical_count">(%1d类/%2d个)</string>
+
+    <string name="home_select_physical_title">选择发送的实物资产</string>
+    <string name="home_contract_address_str">合约地址：%s</string>
+    <string name="home_contract_name_str">合约名称：%s</string>
+    <string name="home_token_id_data_str">Token ID：%s</string>
+    <string name="physical_empty_str">暂无可发送的资产</string>
+    <string name="points_empty_str">暂无可发送的积分</string>
+
+    <string name="home_back_up_now_str">立即备份</string>
+
+    <string name="add_property_title">添加积分资产</string>
+    <string name="property_manager_title">首页资产管理</string>
+    <string name="my_property_title">我的所有资产</string>
+    <string name="hot_property_title">热门资产</string>
+    
+    
+    <string name="balance_str">余额：%d</string>
+
+</resources>

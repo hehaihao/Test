@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">PocketToken</string>
+
+    <string name="manager_wallet_title">钱包管理</string>
+    <string name="address_list_title">地址本</string>
+    <string name="address_list_add">添加</string>
+    <string name="address_save">保存</string>
+    <string name="address_list_delete">删除</string>
+    <string name="address_add_title_str">添加地址</string>
+    <string name="address_edit_title_str">编辑地址</string>
+    <string name="address_edit_exist">地址已存在</string>
+    <string name="address_delete_title_str">提示</string>
+    <string name="address_delete_content_str">确定删除地址？</string>
+    <string name="address_null_tip_str">请输入地址</string>
+    <string name="address_name_null_tip_str">联系人姓名</string>
+    <string name="address_desc_null_tip_str">备注（选填）</string>
+    <string name="app_system_setting_str">设置</string>
+    <string name="app_version_update_str">版本更新</string>
+    <string name="app_version_update_latest_str">当前已是最新版本</string>
+    <string name="touch_id_setting_str">Touch ID</string>
+    <string name="node_setting_str">节点设置</string>
+    <string name="system_setting_str">系统设置</string>
+    <string name="system_block_browser_str">区块浏览器</string>
+
+    <string name="address_err_tip_str">输入联系人有效的地址</string>
+    <string name="address_message_str">地址信息</string>
+    <string name="address_exists_str">该地址已存在，不能重复添加</string>
+
+    <string name="me">我的</string>
+    <string name="open_touch_id_fail">设置指纹失败</string>
+    <string name="node_setting_success">节点设置成功</string>
+
+
+    <string name="upgrade_introduce">更新说明</string>
+
+
+
+    <string name="system_setting_download_link_lost">下载链接丢失</string>
+
+
+
+
+</resources>
